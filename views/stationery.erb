@@ -4,21 +4,12 @@
     <div class="container">
       <div class="message">
         <div class="subject">
-          obj: <%= @subject %>
+        	Message de<br/>
+        	<%= @sender %>
+			obj: <%= @subject %>
         </div>
         <div class="subject-divider"></div>
-        <%= @body.to_s.gsub(/\n/, "<br/>") %>
-      </div>
-      <div class="flap"></div>
-      <div class="envelope">
-        <div class="header">
-          <div class="header-intro">
-            Message de
-          </div>
-          <div class="header-from">
-            <%= @sender %>
-          </div>
-        </div>
+        <%= @body.to_s.gsub(/\n/, "<br/>") %>        
       </div>
     </div>
   </body>
